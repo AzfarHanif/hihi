@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bunga Mekar</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .flower {
+      width: 0;
+      height: 0;
+      margin: auto;
+      animation: bloom 2s ease-in-out forwards;
+      position: relative;
+    }
+
+    .petal {
+      width: 50px;
+      height: 50px;
+      background-color: #ff69b4;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform-origin: bottom right;
+    }
+
+    .petal:nth-child(1) {
+      transform: rotate(0deg);
+    }
+    .petal:nth-child(2) {
+      transform: rotate(45deg);
+    }
+    .petal:nth-child(3) {
+      transform: rotate(90deg);
+    }
+    .petal:nth-child(4) {
+      transform: rotate(135deg);
+    }
+    .petal:nth-child(5) {
+      transform: rotate(180deg);
+    }
+    .petal:nth-child(6) {
+      transform: rotate(225deg);
+    }
+    .petal:nth-child(7) {
+      transform: rotate(270deg);
+    }
+    .petal:nth-child(8) {
+      transform: rotate(315deg);
+    }
+
+    .center {
+      width: 30px;
+      height: 30px;
+      background-color: yellow;
+      border-radius: 50%;
+      position: absolute;
+      top: 35px;
+      left: 35px;
+    }
+
+    @keyframes bloom {
+      to {
+        width: 120px;
+        height: 120px;
+      }
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 2rem;
+      color: #4caf50;
+      animation: fadeIn 3s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: white;
+      background-color: #4caf50;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #388e3c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="flower">
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="center"></div>
+    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bunga Mekar</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #1E201E;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .flower {
+      width: 0;
+      height: 0;
+      margin: auto;
+      animation: bloom 2s ease-in-out forwards;
+      position: relative;
+      margin-top: 10px;
+    }
+
+    .petal {
+      width: 50px;
+      height: 50px;
+      background-color: #ff69b4;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform-origin: bottom right;
+    }
+
+    .petal:nth-child(1) {
+      transform: rotate(0deg);
+    }
+    .petal:nth-child(2) {
+      transform: rotate(45deg);
+    }
+    .petal:nth-child(3) {
+      transform: rotate(90deg);
+    }
+    .petal:nth-child(4) {
+      transform: rotate(135deg);
+    }
+    .petal:nth-child(5) {
+      transform: rotate(180deg);
+    }
+    .petal:nth-child(6) {
+      transform: rotate(225deg);
+    }
+    .petal:nth-child(7) {
+      transform: rotate(270deg);
+    }
+    .petal:nth-child(8) {
+      transform: rotate(315deg);
+    }
+
+    .center {
+      width: 30px;
+      height: 30px;
+      background-color: yellow;
+      border-radius: 50%;
+      position: absolute;
+      top: 35px;
+      left: 35px;
+    }
+
+    @keyframes bloom {
+      to {
+        width: 120px;
+        height: 120px;
+      }
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 2rem;
+      color: #4caf50;
+      animation: fadeIn 3s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: white;
+      background-color: #4caf50;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background-color: #388e3c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="flower">
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="center"></div>
+    </div>
+    <h1>This is for U</h1>
+    <a href="text-ucapan.html" class="btn">Press this button</a>
+  </div>
+</body>
+</html>
+
+  </div>
+</body>
+</html>
