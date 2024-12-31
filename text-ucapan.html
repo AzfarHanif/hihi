@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About U</title>
+    <style>
+        /* Reset margin dan padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Gaya untuk header */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1E201E;
+        }
+
+        /* .header {
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        } */
+
+        .header h1 {
+            color: #0D92F4;
+            font-size: 24px;
+        }
+
+        .nav {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .nav a.active {
+            background-color: #0D92F4;
+            color: #fff;
+            border-radius: 5px;
+        }       
+
+        nav a:hover {
+        text-decoration: solid;
+        background-color: #008080;
+        border-radius: 5px;
+        }
+
+        /* Gaya untuk judul halaman About */
+        .about-header {
+            background-color: #3C3D37;
+            color: #ECDFCC;
+            padding: 40px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Izinkan elemen turun ke baris baru */
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        
+        .about-content {
+            position: relative;
+            width: 450px;            /* Lebar setiap kolom */
+            height: 600px;           /* Tinggi setiap kolom */
+            background-color: #ECDFCC;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 14px;
+        }
+
+        .about-content p{
+            position: absolute;
+            top: 20px;       /* Sesuaikan posisi vertikal teks */
+            color: black;  /* Warna teks */
+            font-size: 96px; /* Ukuran teks */
+            font-weight: bold;
+            z-index: 1;      /* Pastikan teks di atas logo */
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .about-content h2{
+            position: absolute;
+            bottom: 10px;       /* Sesuaikan posisi vertikal teks */
+            color: black;  /* Warna teks */
+            font-size: 36px; /* Ukuran teks */
+            font-weight: bold;
+            z-index: 1;      /* Pastikan teks di atas logo */
+        }
+
+        /* Gaya untuk gambar di About section */
+        .about-image {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .about-image img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Gaya untuk konten di bagian About */
+        .about-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about-content h1 {
+            position: absolute;
+            top: 20px;       /* Sesuaikan posisi vertikal teks */
+            color: black;  /* Warna teks */
+            font-size: 72px; /* Ukuran teks */
+            font-weight: bold;
+            z-index: 1;      /* Pastikan teks di atas logo */
+            padding: 10px;
+        }
+
+        .about-content a {
+            transition: transform 0.3s ease, opacity 0.3s ease; /* Menambahkan transisi pada transformasi dan opasitas */
+            display: inline-block;
+        }
+
+        .about-content img{
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .about-content p {
+            color: #333;
+            font-size: 16px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            display: flex;
+        }
+
+        .about-content p strong {
+            font-weight: bold;
+        }
+
+        /* Gaya untuk footer */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+
+        @media screen and (max-width: 768px) {
+    .about-content p {
+        font-size: 12px; /* Ukuran teks lebih kecil */
+        line-height: 1.4; /* Tingkatkan jarak antar baris */
+        padding: 10px; /* Tambahkan ruang dalam elemen */
+    }
+
+    .about-content h1 {
+        font-size: 20px; /* Ukuran heading lebih kecil */
+        margin-bottom: 10px;
+    }
+
+    .about-content h2 {
+        font-size: 16px; /* Perkecil sub-heading */
+    }
+
+    .about-content img {
+        width: 100%; /* Gambar penuh sesuai layar */
+        max-width: 300px; /* Batas maksimal lebar gambar */
+        margin: 10px auto; /* Pusatkan gambar */
+    }
+
+    .about-header {
+        font-size: 16px; /* Sesuaikan ukuran header */
+        padding: 10px; /* Kurangi padding */
+    }
+
+    .footer {
+        font-size: 10px; /* Perkecil teks footer */
+        padding: 5px; /* Kurangi jarak di footer */
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <!-- <header class="header">
+        <h1>Hari Guru</h1> -->
+        <!-- <nav>
+            <ul class="nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#" class="active">ABOUT</a></li>
+                <li><a href="Service.html">SERVICE</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+            </ul>
+        </nav> -->
+    <!-- </header> -->
+
+    <!-- About Header -->
+    <section class="about-header">
+        <div class="about-sir"><h1>About U</h1></div>
+    </section>
+
+    <!-- About Image -->
+    <!-- <div class="about-image">
+        <div class="penjelasan">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </div>
+    </div> -->
+
+    <section class="container">
+        
+        <div class="about-content">              
+            <!-- <h1>Instagram</h1> -->
+            <p>Hi Adisa,
+
+                I have been meaning to tell you something for a while now, and I hope this message doesn’t catch you off guard. I really admire you—not just for how amazing you are, but for the way you make everything around you brighter.
+                
+                I find myself looking forward to the moments we share, no matter how small. You make me smile even on the toughest days, and I can’t help but feel that there’s something special about you.
+                
+                So, I wanted to be honest and let you know that I have feelings for you. I completely understand if you don’t feel the same way, but I couldn’t keep this to myself anymore. Whatever happens, I value our connection and hope it brings us closer, no matter the outcome.
+                
+                </p>
+            <!-- <img src="love.png" alt="Love"> -->
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <!-- <section class="about-content">
+        <h3>ABOUT</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <strong>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</strong>, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <strong>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</strong>, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        
+        <h3>VISI</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <strong>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</strong></p>
+
+        <h3>MISI</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <strong>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</strong></p>
+    </section> -->
+
+    <!-- Footer -->
+   s -->
+
+</body>
+</html>
